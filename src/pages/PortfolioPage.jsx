@@ -1,7 +1,11 @@
-import { useEffect } from 'react';
-import ReactGA from 'react-ga4';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioPage = () => {
-    return <></>;
+    const { t } = useTranslation();
+    return (
+        <>
+            <h1 className="main__title">{t('eror.page')}</h1>
+        </>
+    );
 };
 export default PortfolioPage;
