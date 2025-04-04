@@ -1,0 +1,90 @@
+@use '@/styles/partials/_variables.scss' as vars;
+
+.navbar__nav {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    border-right: 1px solid vars.$dark-theme-50;
+    z-index: 1000;
+    
+
+    .navbar__nav__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    .navbar__nav__link {
+        color: vars.$dark-theme-10;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 0.2s;
+        padding: 5px 10px;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: vars.$dark-theme-30;
+            color: vars.$dark-theme-white;
+        }
+    }
+
+    .active_li {
+        border-radius: 6px;
+        padding: 5px 10px;
+    }
+
+    .language {
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btn {
+            color: vars.$dark-theme-white;
+            font-family: Inter;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: left;
+        }
+    }
+    .dropdown-toggle {
+        cursor: pointer;
+        position: relative;
+        &::after {
+            content: '▾';
+            margin-left: 6px;
+            font-size: 10px;
+        }
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 10px;
+        gap: 5px;
+
+        .dropdown-item {
+            font-size: 12px;
+            padding-left: 10px;
+            color: vars.$dark-theme-60;
+            &:hover {
+                color: vars.$dark-theme-white;
+            }
+        }
+    }
+}

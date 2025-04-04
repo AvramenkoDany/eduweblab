@@ -1,0 +1,39 @@
+@use "@/shared/styles/vars" as vars;
+.light {
+    background-color: white;
+    color: black;
+    .main{
+        &__title{
+            color: vars.$light-theme-black;
+        }
+    }
+    .text{
+        color: vars.$light-theme-10;
+    }
+    .active{
+        color: vars.$light-theme-black;
+    }
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    .main{
+        &__title{
+            color: vars.$dark-theme-white;
+        }
+    }
+    .text{
+        color: vars.$dark-theme-10;
+    }
+    .active{
+        color: vars.$dark-theme-white;;
+    }
+}
+  
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+

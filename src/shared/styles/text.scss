@@ -1,0 +1,11 @@
+@use "@/shared/styles/vars" as vars;
+.main{
+    &__title{
+        //font-family: $font-family;
+        font-weight: 600;
+        font-size: 223px;
+        text-transform: uppercase;
+        text-align: center;
+        color: vars.$dark-theme-white;
+    }
+}
