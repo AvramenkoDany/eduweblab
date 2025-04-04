@@ -17,35 +17,38 @@ i18n
         resources: {
             en: {
                 translation: {
+                    eror:{
+                        "page": "Page under development!!!",
+                    },
                     navMenu: {
                         "logo": "EduWebLab",
                         "link1": "Main",
-                        "link2": "Coursec",
-                        "link3": "Відгуки",
+                        "link2": "Courses",
+                        "link3": "Review",
                         "link4": "HTML",
                         "link5": "CSS",
                         "link6": "JS - basic",
-                        "link7": "JS - продвинутий",
-                        "link8": "React.js - основи",
+                        "link7": "JS - advanced",
+                        "link8": "React.js - basic",
                         "langItem1": "English",
-                        "langItem2": "Українська",
+                        "langItem2": "Ukrainian",
                     },
                     theme: {
                         "dark" : "Dark mode",
                         "light" : "Light mode",
                     },
                     portfolioCard: {
-                        "title1": "HTML курс",
-                        "title2": "CSS курс",
-                        "title3": "JS - курс по основам",
-                        "title4": "JS - продвинутий курс",                       
-                        "title5": "React.js - курс по основам",
+                        "title1": "HTML course",
+                        "title2": "CSS course",
+                        "title3": "JS - Basic course",
+                        "title4": "JS - Advanced course",                       
+                        "title5": "React.js - Basic course",
 
-                        "subTitle1": "Курс по HTML",
-                        "subTitle2": "Курс по CSS",
-                        "subTitle3": "Курс по JS - базовий",
-                        "subTitle4": "Курс по JS - продвинутий",
-                        "subTitle5": "Курс по React.js - базовий",
+                        "subTitle1": "HTML course",
+                        "subTitle2": "CSS course",
+                        "subTitle3": "Basic JS course",
+                        "subTitle4": "Advanced JS course",
+                        "subTitle5": "Basic React.js course ",
                     },
  
                 },
