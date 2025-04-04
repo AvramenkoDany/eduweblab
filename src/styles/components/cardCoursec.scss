@@ -1,16 +1,25 @@
-@use '@/shared/styles/vars' as vars;
-
 .card {
     position: relative;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
-    
-    border-radius: 8px;
-    padding-left: 10px;
 
-    cursor: pointer;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     width: calc(24.7% - 1.25rem * 4 / 5);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
 
     @media (max-width: 2560px) {
         width: calc(33% - 1.25rem * 3 / 4);
@@ -19,80 +28,38 @@
         width: calc(33% - 1.25rem * 3 / 4);
     }
     @media (max-width: 960px) {
-        width: calc(24.7% - 1.25rem * 4 / 5);
-    }
-    @media (max-width: 768px) {
         width: calc(49% - 0.625rem);
     }
-    @media (max-width: 500px) {
-        width: 100%;
-    }
-
-    &__row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    &__title {
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0px;
-        text-align: left;
-
-        margin-bottom: 8px;
-        margin-top: 10px;
-        @media (max-width: 960px) {
-            font-size: 12px;
-        }
-    }
-    &__desc {
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #6b6b6b;
-        margin-bottom: 20px;
+    @media (max-width: 768px) {
+        width: calc(100% - 0.625rem);
     }
 
     &__list {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 24px;
-        margin-top: 140px;
-        row-gap: 50px;
+        gap: 40px 24px;
+        margin-top: 100px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #1e293b;
+
         @media (max-width: 960px) {
-            margin-top: 100px;
+            font-size: 18px;
         }
     }
 
-    &__miniature {
-        width: 100%;
-        height: 422px;
-        padding: 60px 58px 0px 58px;
-        border-radius: 8px;
-        position: relative;
-        overflow: hidden;
+    &__desc {
+        font-size: 16px;
+        color: #64748b;
+        margin-bottom: 0;
 
-        @media (max-width: 1200px) {
-            padding: 60px 30px 0px 30px;
-        }
         @media (max-width: 960px) {
-            height: 256px;
+            font-size: 14px;
         }
-        @media (max-width: 768px) {
-            height: 436px;
-        }
-    }
-    
-    &__column {
-        display: flex;
-        flex-direction: column;
     }
 }

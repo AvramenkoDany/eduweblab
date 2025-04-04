@@ -56,9 +56,36 @@ i18n
                         "subTitle5": "Basic React.js course ",
                     },
                     buttons: {
-                        "startLearning": "Start Learning"
+                        "startLearning": "Start Learning",
+                        "startButton": "Start Course",
+                    },
+                    htmlCourse: {
+                        "title": "HTML Course",
+                        "description": "Detailed course for beginners that will teach you the basics of page markup on the web.",
+   
+                        modules: {
+                            "1": {
+                                "title": "Intro to HTML",
+                                "description": "Basic structure of a page and tags"
+                            },
+                            "2": {
+                                "title": "Tags of headings and paragraphs",
+                                "description": "h1–h6, p, br, hr"
+                            },
+                            "3": {
+                                "title": "Lists, tables, images",
+                                "description": "ul, ol, table, img, caption"
+                            },
+                            "4": {
+                                "title": "Forms",
+                                "description": "input, textarea, select, button, radio, checkbox"
+                            },
+                            "5": {
+                                "title": "Semantic tags",
+                                "description": "header, footer, article, nav, section, aside"
+                            }
+                        }
                     }
- 
                 },
             },
             uk: {
@@ -101,7 +128,34 @@ i18n
                         "subTitle5": "Курс по React.js - базовий",
                     },
                     buttons: {
-                        "startLearning": "Почати навчання"
+                        "startLearning": "Почати навчання",
+                        "startButton": "Почати курс",
+                    },
+                    htmlCourse: {
+                        "title": "Курс з HTML",
+                        "description": "Детальний курс для новачків, який навчить вас основам розмітки сторінок у веб.",
+                        modules: {
+                            "1": {
+                                "title": "Вступ до HTML",
+                                "description": "Базова структура сторінки та теги"
+                            },
+                            "2": {
+                                "title": "Теги заголовків та абзаців",
+                                "description": "h1–h6, p, br, hr"
+                            },
+                            "3": {
+                                "title": "Списки, таблиці, зображення",
+                                "description": "ul, ol, table, img, caption"
+                            },
+                            "4": {
+                                "title": "Форми",
+                                "description": "input, textarea, select, кнопки, radio, checkbox"
+                            },
+                            "5": {
+                                "title": "Семантичні теги",
+                                "description": "header, footer, article, nav, section, aside"
+                            }
+                        }
                     }
                 },
             },

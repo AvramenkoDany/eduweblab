@@ -72,4 +72,19 @@
             }
         }
     }
+
+    .html {
+        &__description {
+            color: vars.$dark-theme-10;
+        }
+        &__card {
+            background-color: vars.$light-theme-60;
+            border: 1px solid vars.$dark-theme-40;
+            &:hover {
+                background-color: vars.$dark-theme-40;
+                transform: translateY(-5px);
+            }
+        }
+    }
+
 }
