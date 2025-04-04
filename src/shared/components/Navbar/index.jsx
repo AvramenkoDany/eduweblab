@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LanguageSwitcher from '@/shared/components/Navbar/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import { navPage } from '@/api/logic/navPage';
@@ -8,21 +8,14 @@ import '@/styles/index.scss';
 
 const Navbar = ({ setTheme, theme }) => {
     const { t } = useTranslation();
-    const [openDropdown, setOpenDropdown] = useState(null);
     const navigate = useNavigate();
     const location = useLocation();
 
     React.useEffect(() => {
-        setOpenDropdown(null);
+        // Випадаюче меню закривається при зміні сторінки, якщо це необхідно
     }, [location.pathname]);
 
     const handleMenuClick = (el) => {
-        if (openDropdown !== el.id) {
-            setOpenDropdown(el.id);
-        } else {
-            setOpenDropdown(null);
-        }
-
         navigate(el.route);
     };
 
@@ -43,19 +36,17 @@ const Navbar = ({ setTheme, theme }) => {
                                 >
                                     {t(`navMenu.link${i + 1}`)}
                                 </div>
-                                {openDropdown === el.id && (
-                                    <div className="dropdown-menu">
-                                        {el.children.map((child) => (
-                                            <NavLink
-                                                key={child.id}
-                                                to={child.route}
-                                                className="navbar__nav__link dropdown-item"
-                                            >
-                                                {child.title}
-                                            </NavLink>
-                                        ))}
-                                    </div>
-                                )}
+                                <div className="dropdown-menu">
+                                    {el.children.map((child) => (
+                                        <NavLink
+                                            key={child.id}
+                                            to={child.route}
+                                            className="navbar__nav__link dropdown-item"
+                                        >
+                                            {child.title}
+                                        </NavLink>
+                                    ))}
+                                </div>
                             </>
                         ) : (
                             <NavLink
