@@ -23,7 +23,9 @@ const Navbar = ({ setTheme, theme }) => {
         <aside className="navbar__nav">
             <div className="navbar__nav__links">
                 <div className="navbar__nav__links-wrapper">
-                    <p className="navbar__nav__link">{t('navMenu.logo')}</p>
+                    <NavLink to="/" className="navbar__nav__link">
+                        {t('navMenu.logo')}
+                    </NavLink>
                 </div>
 
                 {navPage.map((el, i) => (
