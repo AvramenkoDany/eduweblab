@@ -29,7 +29,7 @@
         }
     }
     .card {
-        border-top: 1px solid vars.$dark-theme-50;
+        background-color: vars.$dark-theme-60;
         &__miniature {
             background-color: vars.$dark-theme-50;
             transition: background-color 0.5s ease-in-out;
