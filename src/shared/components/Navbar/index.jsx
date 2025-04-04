@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LanguageSwitcher from '@/shared/components/Navbar/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
-import { navPage } from '@/api/navigation/navPage';
+import { navPage } from '@/api/logic/navPage';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import ThemeToggle from '@/theme/ThemeToggle';
 import '@/styles/index.scss';
@@ -12,7 +12,6 @@ const Navbar = ({ setTheme, theme }) => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // Автоматично закриває дропдаун при зміні маршруту
     React.useEffect(() => {
         setOpenDropdown(null);
     }, [location.pathname]);
