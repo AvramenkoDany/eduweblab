@@ -1,6 +1,5 @@
 export { default as HomePage } from './HomePage';
 export { default as CoursesPage } from './CoursesPage';
-export { default as CourseDetail } from './CourseDetail';
 export { default as PortfolioPage} from './PortfolioPage';
 
 export { default as CssPage } from './courses/css';
