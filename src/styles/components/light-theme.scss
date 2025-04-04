@@ -9,17 +9,28 @@
             color: vars.$light-theme-black;
         }
     }
-    .info {
+    
+    .home {
+        &__section {
+            color: vars.$light-theme-black;
+        }
         &__title {
             color: vars.$light-theme-black;
         }
-        &__subtitle {
-            color: vars.$light-theme-black;
+        &__description {
+            color: vars.$light-theme-10;
         }
-        &__text {
-            color: vars.$light-theme-black;
+        &__button {
+            background-color: vars.$light-theme-10;
+            color: vars.$dark-theme-white;
+            
+            &:hover {
+                background-color: vars.$light-theme-20;
+            }
         }
     }
+
+
     .navbar__nav{
         background-color: vars.$light-theme-white;
     }

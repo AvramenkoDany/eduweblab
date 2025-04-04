@@ -17,6 +17,11 @@ i18n
         resources: {
             en: {
                 translation: {
+                    home: {
+                        "title": "Welcome to the educational website",
+                        "description": "This website is designed for studying multimedia technologies and developing educational web design software. Here you will find courses on HTML, CSS, JavaScript, and React to help you master modern web development tools."
+                    },
+
                     eror:{
                         "page": "Page under development!!!",
                     },
@@ -50,11 +55,18 @@ i18n
                         "subTitle4": "Advanced JS course",
                         "subTitle5": "Basic React.js course ",
                     },
+                    buttons: {
+                        "startLearning": "Start Learning"
+                    }
  
                 },
             },
             uk: {
                 translation: {
+                    home: {
+                        "title": "Ласкаво просимо на навчальний сайт",
+                        "description": "Цей сайт створений для вивчення мультимедійних технологій та розробки вебдизайну програм навчального призначення. Ви знайдете курси з HTML, CSS, JavaScript та React, які допоможуть вам опанувати сучасні інструменти веброзробки."
+                    },
                     eror:{
                         "page": "Сторінка в розробці!!!",
                     },
@@ -88,6 +100,9 @@ i18n
                         "subTitle4": "Курс по JS - продвинутий",
                         "subTitle5": "Курс по React.js - базовий",
                     },
+                    buttons: {
+                        "startLearning": "Почати навчання"
+                    }
                 },
             },
         },

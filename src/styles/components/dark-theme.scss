@@ -17,17 +17,27 @@
     .active_li {
         color: vars.$dark-theme-white;
     }
-    .info {
+
+    .home {
+        &__section {
+            color: vars.$dark-theme-white;
+        }
         &__title {
             color: vars.$dark-theme-white;
         }
-        &__subtitle {
-            color: vars.$dark-theme-white;
+        &__description {
+            color: vars.$dark-theme-10;
         }
-        &__text {
-            color: vars.$dark-theme-white;
+        &__button {
+            background-color: vars.$dark-theme-10;
+            color: vars.$dark-theme-60;
+            &:hover {
+                background-color: vars.$dark-theme-20;
+            }
         }
     }
+
+
     .card {
         background-color: vars.$dark-theme-60;
         &__miniature {

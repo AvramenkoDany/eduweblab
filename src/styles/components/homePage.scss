@@ -1,0 +1,39 @@
+.home {
+    &__section {
+      padding: 2rem;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 1.5rem;
+    }
+  
+    &__description {
+      font-size: 1.25rem;
+      color: #374151;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+  
+    &__button {
+      background-color: #2563eb;
+      color: white;
+      font-size: 1.125rem;
+      padding: 0.75rem 2rem;
+      border-radius: 1rem;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        background-color: #1d4ed8;
+      }
+    }
+  }
+  
