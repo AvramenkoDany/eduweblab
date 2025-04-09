@@ -6,7 +6,7 @@ import {
     CssPage,
     JsBeginerPage,
     JsProgresPage,
-    ReactProgresPage,
+    ReactBeginnerPage,
 } from '@/pages';
 
 import Layout from '@/layout/layout';
@@ -33,7 +33,10 @@ const routes = [
             { path: PAGE_COURSES_CSS, element: <CssPage /> },
             { path: PAGE_COURSES_JS_BEGINER, element: <JsBeginerPage /> },
             { path: PAGE_COURSES_JS_PROGRES, element: <JsProgresPage /> },
-            { path: PAGE_COURSES_REACT_BEGINER, element: <ReactProgresPage /> },
+            {
+                path: PAGE_COURSES_REACT_BEGINER,
+                element: <ReactBeginnerPage />,
+            },
 
             { path: PAGE_PORTFOLIO, element: <PortfolioPage /> },
         ],
