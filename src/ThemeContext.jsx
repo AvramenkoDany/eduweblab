@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
-import './shared/styles/theme.scss';
+import '@/styles/index.scss';
 
 export const ThemeContext = createContext();
 
@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }) => {
     }, [theme]);
 
     const toggleTheme = (newTheme) => {
-        setTheme(newTheme); // Теперь устанавливаем конкретную тему
+        setTheme(newTheme);
     };
 
     return (

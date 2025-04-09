@@ -1,3 +1,4 @@
+@use '@/styles/partials/_variables.scss' as vars;
 .html {
     padding-top: 100px;
 
@@ -11,7 +12,6 @@
     &__description {
         font-size: 18px;
         text-align: center;
-        color: #6b7280;
         max-width: 700px;
         margin: 0 auto 60px auto;
     }
