@@ -13,7 +13,9 @@ const HtmlPage = () => {
             <div className="html__card-list">
                 {htmlModules.map((mod) => (
                     <div className="html__card" key={mod.id}>
-                        <span className="html__card-number">Урок {mod.id}</span>
+                        <span className="html__card-number">
+                            {t('navMenu.lesson')} {mod.id}
+                        </span>
                         <h3 className="html__card-title">{t(mod.titleKey)}</h3>
                         <p className="html__card-desc">
                             {t(mod.descriptionKey)}

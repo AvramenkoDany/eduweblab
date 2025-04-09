@@ -6,4 +6,4 @@ export { default as CssPage } from './courses/css';
 export { default as HtmlPage } from './courses/html';
 export { default as JsBeginerPage } from './courses/js-beginer';
 export { default as JsProgresPage } from './courses/js-progres';
-export { default as ReactProgresPage } from './courses/react-beginer';
+export { default as ReactBeginnerPage } from './courses/react-beginer';

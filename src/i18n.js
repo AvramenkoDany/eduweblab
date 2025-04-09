@@ -37,6 +37,7 @@ i18n
                         "link8": "React.js - basic",
                         "langItem1": "English",
                         "langItem2": "Ukrainian",
+                        "lesson": 'Lesson',
                     },
                     theme: {
                         "dark" : "Dark mode",
@@ -85,7 +86,112 @@ i18n
                                 "description": "header, footer, article, nav, section, aside"
                             }
                         }
-                    }
+                    },
+                    cssCourse: {
+                        "title": "CSS Course",
+                        "description": "Step-by-step CSS course for beginners. Learn how to style websites from scratch.",
+                        modules: {
+                            "1": {
+                                "title": "Intro to CSS",
+                                "description": "How CSS works and how to connect it to HTML"
+                            },
+                            "2": {
+                                "title": "Selectors and Properties",
+                                "description": "Class, ID, element selectors and how to apply properties"
+                            },
+                            "3": {
+                                "title": "Colors, Units and Text Styling",
+                                "description": "color, font-size, px, %, em, rem"
+                            },
+                            "4": {
+                                "title": "Box Model and Layout",
+                                "description": "margin, padding, border, display"
+                            },
+                            "5": {
+                                "title": "Positioning and Flexbox",
+                                "description": "relative, absolute, fixed, flexbox basics"
+                            }
+                        }
+                    },
+                    jsBeginerCourse: {
+                        "title": "JavaScript Course",
+                        "description": "Basic JavaScript course for beginners. Learn how to add interactivity to your websites.",
+                        modules: {
+                            "1": {
+                                "title": "Intro to JavaScript",
+                                "description": "What is JS and where it's used"
+                            },
+                            "2": {
+                                "title": "Variables and Data Types",
+                                "description": "var, let, const, strings, numbers, booleans"
+                            },
+                            "3": {
+                                "title": "Operators and Conditions",
+                                "description": "if, else, comparison and logical operators"
+                            },
+                            "4": {
+                                "title": "Loops",
+                                "description": "for, while, do...while"
+                            },
+                            "5": {
+                                "title": "Functions",
+                                "description": "Function declaration and usage"
+                            }
+                        }
+                    },
+
+                    jsAdvancedCourse: {
+                        "title": "Advanced JavaScript Course",
+                        "description": "Deepen your understanding of JavaScript with concepts like closures, async programming, and ES6+ features.",
+                        modules: {
+                            "1": {
+                                "title": "Closures and Scope",
+                                "description": "How lexical scope and closures work in JS"
+                            },
+                            "2": {
+                                "title": "Asynchronous JavaScript",
+                                "description": "Callbacks, Promises, and async/await"
+                            },
+                            "3": {
+                                "title": "Object-Oriented Programming",
+                                "description": "Constructor functions, classes, and inheritance"
+                            },
+                            "4": {
+                                "title": "Modules and Tooling",
+                                "description": "import/export, bundlers, transpilers"
+                            },
+                            "5": {
+                                "title": "Error Handling and Debugging",
+                                "description": "try...catch, error types, debugging tools"
+                            }
+                        }
+                    },
+                    reactCourse: {
+                        "title": "React.js Course",
+                        "description": "A beginner-friendly introduction to React. Learn how to build modern interactive UIs using components and hooks.",
+                        modules: {
+                            "1": {
+                                "title": "Intro to React",
+                                "description": "What is React and why it's used"
+                            },
+                            "2": {
+                                "title": "JSX and Rendering",
+                                "description": "JSX syntax and rendering elements"
+                            },
+                            "3": {
+                                "title": "Components",
+                                "description": "Functional components and props"
+                            },
+                            "4": {
+                                "title": "State and Events",
+                                "description": "Using useState and handling events"
+                            },
+                            "5": {
+                                "title": "useEffect Hook",
+                                "description": "Side effects and lifecycle with useEffect"
+                            }
+                        }
+                    },
                 },
             },
             uk: {
@@ -109,6 +215,7 @@ i18n
                         "link8": "React.js - основи",
                         "langItem1": "English",
                         "langItem2": "Українська",
+                        "lesson": 'Урок',
                     },
                     theme: {
                         "dark" : "Темний режим",
@@ -155,6 +262,110 @@ i18n
                                 "title": "Семантичні теги",
                                 "description": "header, footer, article, nav, section, aside"
                             }
+                        }
+                    },
+                    "cssCourse": {
+                        "title": "Курс CSS",
+                        "description": "Покроковий курс CSS для початківців. Навчіться стилізувати сайти з нуля.",
+                        "modules": {
+                        "1": {
+                            "title": "Вступ до CSS",
+                            "description": "Як працює CSS та як підключити його до HTML"
+                        },
+                        "2": {
+                            "title": "Селектори та властивості",
+                            "description": "Селектори класів, ID, елементів і застосування властивостей"
+                        },
+                        "3": {
+                            "title": "Кольори, одиниці виміру та стилізація тексту",
+                            "description": "color, font-size, px, %, em, rem"
+                        },
+                        "4": {
+                            "title": "Блочна модель та розмітка",
+                            "description": "margin, padding, border, display"
+                        },
+                        "5": {
+                            "title": "Позиціонування та Flexbox",
+                            "description": "relative, absolute, fixed, основи flexbox"
+                        }
+                        }
+                    },
+                    "jsBeginerCourse": {
+                        "title": "Курс JavaScript",
+                        "description": "Базовий курс JavaScript для початківців. Дізнайтесь, як додати інтерактивність до ваших сайтів.",
+                        "modules": {
+                        "1": {
+                            "title": "Вступ до JavaScript",
+                            "description": "Що таке JS і де він використовується"
+                        },
+                        "2": {
+                            "title": "Змінні та типи даних",
+                            "description": "var, let, const, рядки, числа, булеві значення"
+                        },
+                        "3": {
+                            "title": "Оператори та умови",
+                            "description": "if, else, оператори порівняння та логічні оператори"
+                        },
+                        "4": {
+                            "title": "Цикли",
+                            "description": "for, while, do...while"
+                        },
+                        "5": {
+                            "title": "Функції",
+                            "description": "Оголошення функцій та їх використання"
+                        }
+                        }
+                    },
+                    "jsAdvancedCourse": {
+                        "title": "Розширений курс JavaScript",
+                        "description": "Поглибте свої знання JavaScript, вивчивши замикання, асинхронне програмування та функції ES6+.",
+                        "modules": {
+                        "1": {
+                            "title": "Замикання та область видимості",
+                            "description": "Як працює лексична область видимості та замикання в JS"
+                        },
+                        "2": {
+                            "title": "Асинхронний JavaScript",
+                            "description": "Callbacks, Promises, та async/await"
+                        },
+                        "3": {
+                            "title": "Об'єктно-орієнтоване програмування",
+                            "description": "Конструктори, класи та наслідування"
+                        },
+                        "4": {
+                            "title": "Модулі та інструменти",
+                            "description": "import/export, збирачі, транспілери"
+                        },
+                        "5": {
+                            "title": "Обробка помилок та відлагодження",
+                            "description": "try...catch, типи помилок, інструменти для відлагодження"
+                        }
+                        }
+                    },
+                    "reactCourse": {
+                        "title": "Курс React.js",
+                        "description": "Зрозумілий курс React для початківців. Дізнайтесь, як створювати сучасні інтерактивні інтерфейси з використанням компонентів та хуків.",
+                        "modules": {
+                        "1": {
+                            "title": "Вступ до React",
+                            "description": "Що таке React і навіщо він потрібен"
+                        },
+                        "2": {
+                            "title": "JSX і рендеринг",
+                            "description": "Синтаксис JSX та рендеринг елементів"
+                        },
+                        "3": {
+                            "title": "Компоненти",
+                            "description": "Функціональні компоненти та пропси"
+                        },
+                        "4": {
+                            "title": "Стан та події",
+                            "description": "Використання useState та обробка подій"
+                        },
+                        "5": {
+                            "title": "Хук useEffect",
+                            "description": "Побічні ефекти та життєвий цикл з useEffect"
+                        }
                         }
                     }
                 },

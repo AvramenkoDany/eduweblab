@@ -1,12 +1,38 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import jsModules from '@/api/courses/jsBeginerCourses/jsBeginerModules';
 
 const JsBeginerPage = () => {
     const { t } = useTranslation();
+
     return (
-        <>
-            <h1 className="main__title">{t('eror.page')}</h1>
-        </>
+        <div className="html container">
+            <h1 className="html__title">{t('jsBeginerCourse.title')}</h1>
+            <p className="html__description">
+                {t('jsBeginerCourse.description')}
+            </p>
+
+            <div className="html__card-list">
+                {jsModules.map((mod) => (
+                    <div className="html__card" key={mod.id}>
+                        <span className="html__card-number">
+                            {t('navMenu.lesson')} {mod.id}
+                        </span>
+                        <h3 className="html__card-title">{t(mod.titleKey)}</h3>
+                        <p className="html__card-desc">
+                            {t(mod.descriptionKey)}
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            <div className="html__cta">
+                <button className="html__btn">
+                    {t('buttons.startButton')}
+                </button>
+            </div>
+        </div>
     );
 };
+
 export default JsBeginerPage;
