@@ -10,7 +10,7 @@ export default defineConfig({
         },
     },
     build: {
-        minify: 'esbuild', // Включаем минификацию для продакшн-сборки
+        minify: 'esbuild',
         rollupOptions: {
             output: {
                 manualChunks: {
@@ -19,5 +19,5 @@ export default defineConfig({
             },
         },
     },
-    base: '/eduweblab/', // Настройка для GitHub Pages
+    base: '/eduweblab/',
 });
