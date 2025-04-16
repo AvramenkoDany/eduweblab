@@ -1,0 +1,128 @@
+.chemistry-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2d3748;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        color: #4a5568;
+        margin-bottom: 32px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+
+        & > .chemistry-page__label {
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        & > .chemistry-page__radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+
+            & > .chemistry-page__radio {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: #4a5568;
+                cursor: pointer;
+
+                &-input {
+                    display: none; // Скрываем стандартное радио
+                }
+
+                &-button {
+                    display: inline-block;
+                    padding: 8px 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    background-color: #f9f9f9;
+                    color: #333;
+                    font-size: 14px;
+                    text-align: center;
+                    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+                    &:hover {
+                        background-color: #e6e6e6;
+                    }
+
+                    &:active {
+                        background-color: #d4d4d4;
+                    }
+                }
+
+                &-input:checked + .chemistry-page__radio-button {
+                    background-color: #4299e1;
+                    color: #fff;
+                    border-color: #4299e1;
+                }
+            }
+        }
+    }
+
+    &__element-description {
+        color: #4a5568;
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 1rem;
+        max-width: 600px;
+    }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-in-out;
+}
+
+.animate-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.chemistry-page__canvas {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+}

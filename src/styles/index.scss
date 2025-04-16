@@ -2,7 +2,6 @@
 
 @use 'partials/_fonts';
 @use 'partials/_header';
-@use 'partials/_footer';
 @use 'partials/_buttons';
 @use 'partials/_variables';
 @use 'partials/_text';
@@ -17,3 +16,4 @@
 @use 'components/CoursesPage.scss';
 @use 'components/homePage.scss';
 @use 'components/html-course.scss';
+@use 'components/chemistry-page.scss';

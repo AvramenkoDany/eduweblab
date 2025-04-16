@@ -1,19 +1,15 @@
 import React from 'react';
-import LanguageSwitcher from '@/shared/components/Navbar/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import { navPage } from '@/api/logic/navPage';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
-import ThemeToggle from '@/theme/ThemeToggle';
 import '@/styles/index.scss';
 
-const Navbar = ({ setTheme, theme }) => {
+const Navbar = ({}) => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const location = useLocation();
 
-    React.useEffect(() => {
-        // Випадаюче меню закривається при зміні сторінки, якщо це необхідно
-    }, [location.pathname]);
+    React.useEffect(() => {}, [location.pathname]);
 
     const handleMenuClick = (el) => {
         navigate(el.route);
@@ -64,13 +60,6 @@ const Navbar = ({ setTheme, theme }) => {
                         )}
                     </div>
                 ))}
-
-                <div className="navbar__nav__links-wrapper">
-                    <LanguageSwitcher />
-                </div>
-                <div className="navbar__nav__links-wrapper">
-                    <ThemeToggle setThemes={setTheme} theme={theme} />
-                </div>
             </div>
         </aside>
     );
