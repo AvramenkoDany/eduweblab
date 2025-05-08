@@ -1,6 +1,13 @@
 import { createHashRouter } from 'react-router-dom';
 
-import { HomePage, CoursesPage, PortfolioPage, MathPage } from '@/pages';
+import {
+    HomePage,
+    CoursesPage,
+    PortfolioPage,
+    MathPage,
+    PhisicsPage,
+    ChemistryPage,
+} from '@/pages';
 
 import Layout from '@/layout/layout';
 
@@ -8,7 +15,9 @@ import {
     PAGE_HOME,
     PAGE_COURSES,
     PAGE_PORTFOLIO,
-    PAGE_COURSES_HTML,
+    PAGE_COURSES_MATH,
+    PAGE_COURSES_PHISICS,
+    PAGE_COURSES_CHEMISTRY,
 } from './routes';
 
 const routes = [
@@ -18,7 +27,9 @@ const routes = [
         children: [
             { path: PAGE_HOME, element: <HomePage /> },
             { path: PAGE_COURSES, element: <CoursesPage /> },
-            { path: PAGE_COURSES_HTML, element: <MathPage /> },
+            { path: PAGE_COURSES_MATH, element: <MathPage /> },
+            { path: PAGE_COURSES_PHISICS, element: <PhisicsPage /> },
+            { path: PAGE_COURSES_CHEMISTRY, element: <ChemistryPage /> },
 
             { path: PAGE_PORTFOLIO, element: <PortfolioPage /> },
         ],

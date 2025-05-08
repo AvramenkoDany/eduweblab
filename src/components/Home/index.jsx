@@ -11,7 +11,7 @@ const HomePageContent = () => {
             <div>
                 <h1 className="home__title">{t('home.title')}</h1>
                 <p className="home__description">{t('home.description')}</p>
-                <Link to="/courses/math" className="home__button">
+                <Link to="/courses" className="home__button">
                     {t('buttons.startLearning')}
                 </Link>
             </div>

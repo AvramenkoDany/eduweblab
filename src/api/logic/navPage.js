@@ -11,8 +11,22 @@ export const navPage = [
         title: () => i18next.t('navMenu.link2'),
         route: '/courses',
         children: [
-            { id: 21, title: () => i18next.t('navMenu.link4'), route: '/courses/math' },
-        ]
+            {
+                id: 21,
+                title: () => i18next.t('navMenu.link4'),
+                route: '/courses/math',
+            },
+            {
+                id: 22,
+                title: () => i18next.t('navMenu.link5'),
+                route: '/courses/phisics',
+            },
+            {
+                id: 23,
+                title: () => i18next.t('navMenu.link6'),
+                route: '/courses/chemistry',
+            },
+        ],
     },
     {
         id: 3,

@@ -1,0 +1,171 @@
+.chemistry-page {
+    padding: 30px;
+
+    &__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+    }
+
+    &__switcher {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            background: #457b9d;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #1d3557;
+            }
+        }
+    }
+}
+
+.chem-law {
+    padding: 2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    background: #f8f9fa;
+    text-align: center;
+  }
+  .chem-law__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .chem-law__description {
+    font-size: 1.2rem;
+  }
+  
+  .atom, .molecule, .compound, .nucleus, .electron {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  
+  .atom {
+    background-color: #a8dadc;
+  }
+  
+  .molecule {
+    background-color: #f4a261;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .compound {
+    background-color: #e9c46a;
+  }
+  
+  .nucleus {
+    background-color: #e63946;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .electron {
+    width: 20px;
+    height: 20px;
+    background-color: #1d3557;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .orbit {
+    border: 1px dashed #aaa;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    position: relative;
+  }
+  
+  .orbit-1 {
+    animation: orbit-spin 8s linear infinite;
+  }
+  
+  .orbit-2 {
+    width: 140px;
+    height: 140px;
+    animation: orbit-spin 12s linear infinite;
+  }
+  
+  // Анімації
+  @keyframes move-h1 {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes move-h2 {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes move-o {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes appear {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slide-left {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slide-in-right {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes electron-jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-60px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes orbit-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  // Класи
+  .animate-move-h1 { animation: move-h1 1s ease-out forwards; }
+  .animate-move-h2 { animation: move-h2 1s ease-out forwards; }
+  .animate-move-o  { animation: move-o  1s ease-out forwards; }
+  .animate-appear  { animation: appear  1s 1s ease-out forwards; }
+  
+  .animate-fade-in         { animation: fade-in 1s ease-out forwards; }
+  .animate-fade-in-delay   { animation: fade-in 1s 1s ease-out forwards; }
+  
+  .animate-join-left  { animation: move-h1 1s ease-out forwards; }
+  .animate-join-right { animation: move-h2 1s ease-out forwards; }
+  .animate-join-top   { animation: move-o  1s ease-out forwards; }
+  .animate-scale-in   { animation: appear  1s 1s ease-out forwards; }
+  
+  .animate-slide-left        { animation: slide-left 1s ease-out forwards; }
+  .animate-slide-left-delay  { animation: slide-left 1s 0.3s ease-out forwards; }
+  .animate-slide-left-delay-2{ animation: slide-left 1s 0.6s ease-out forwards; }
+  .animate-slide-in-right    { animation: slide-in-right 1s 1s ease-out forwards; }
+  
+  .animate-electron-jump     { animation: electron-jump 2s infinite ease-in-out; }
+  .animate-electron-orbit    { animation: orbit-spin 6s linear infinite; }
+  
