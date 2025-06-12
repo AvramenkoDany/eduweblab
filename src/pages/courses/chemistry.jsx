@@ -6,6 +6,7 @@ import ConstantComposition from '@/components/chemistryCourse/ConstantCompositio
 import MultipleProportions from '@/components/chemistryCourse/MultipleProportions';
 import MolecularStructures from '@/components/chemistryCourse/MolecularStructures';
 import EnergyLevels from '@/components/chemistryCourse/EnergyLevels';
+import Hess from '@/components/chemistryCourse/hess';
 
 const ChemistryPage = () => {
     const [selectedLaw, setSelectedLaw] = useState('mass');
@@ -22,6 +23,8 @@ const ChemistryPage = () => {
                 return <MolecularStructures />;
             case 'energy':
                 return <EnergyLevels />;
+            case 'hess':
+                return <Hess />;
             default:
                 return null;
         }
@@ -35,16 +38,19 @@ const ChemistryPage = () => {
                     Збереження маси
                 </button>
                 <button onClick={() => setSelectedLaw('composition')}>
-                    Постійний склад
+                    Закон Авогадро
                 </button>
                 <button onClick={() => setSelectedLaw('proportions')}>
-                    Кратні відношення
+                    Закон діючих мас
                 </button>
                 <button onClick={() => setSelectedLaw('molecules')}>
-                    Молекули
+                    Закон Фарадея (перший)
                 </button>
                 <button onClick={() => setSelectedLaw('energy')}>
-                    Енергетичні рівні
+                    Закон Дюлонга-Пті
+                </button>
+                <button onClick={() => setSelectedLaw('hess')}>
+                    Закон Гесса
                 </button>
             </div>
             {renderLawComponent()}

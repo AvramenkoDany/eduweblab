@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import '@/styles/index.scss';
-import NewtonLaw from '@/components/phisicsCourse/NewtonLaw';
+import NewtonSecondLaw from '@/components/phisicsCourse/NewtonLaw';
 import HarmonicMotion from '@/components/phisicsCourse/HarmonicMotion';
 import Kinematics from '@/components/phisicsCourse/Kinematics';
 import ConservationLaws from '@/components/phisicsCourse/ConservationLaws';
@@ -11,15 +11,15 @@ const PhisicsPage = () => {
     const [selectedLaw, setSelectedLaw] = useState('newton');
 
     const lawComponents = {
-        newton: <NewtonLaw />,
+        newton: <NewtonSecondLaw />,
         harmonic: <HarmonicMotion />,
         kinematics: <Kinematics />,
         conservation: <ConservationLaws />,
     };
     const lawNames = {
-        newton: 'Закон Ньютона',
-        harmonic: 'Гармонічні коливання',
-        kinematics: 'Кінематика',
+        newton: 'Другий Закон Ньютона',
+        harmonic: 'Закон Архімеда',
+        kinematics: 'Закон збереження імпульсу',
         conservation: 'Закони збереження',
     };
 

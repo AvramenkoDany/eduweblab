@@ -1,4 +1,4 @@
-@use '@/styles/partials/_variables.scss' as vars;
+@use "@/styles/partials/_variables.scss" as vars;
 
 .navbar__nav {
     width: 220px;
@@ -12,7 +12,6 @@
     gap: 30px;
     border-right: 1px solid vars.$dark-theme-50;
     z-index: 1000;
-    
 
     .navbar__nav__links {
         display: flex;
@@ -27,7 +26,7 @@
     }
 
     .navbar__nav__link {
-        color: vars.$dark-theme-10;
+        color: vars.$dark-theme-white;
         font-family: Inter;
         font-size: 14px;
         font-weight: 400;
@@ -37,7 +36,7 @@
         border-radius: 6px;
 
         &:hover {
-            background-color: vars.$dark-theme-30;
+            background-color: vars.$dark-theme-10;
             color: vars.$dark-theme-white;
         }
     }
@@ -65,7 +64,7 @@
         cursor: pointer;
         position: relative;
         &::after {
-            content: '▾';
+            content: "▾";
             margin-left: 6px;
             font-size: 10px;
         }
@@ -81,7 +80,6 @@
         .dropdown-item {
             font-size: 12px;
             padding-left: 10px;
- 
         }
     }
 }
