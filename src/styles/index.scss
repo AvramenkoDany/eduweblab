@@ -1,0 +1,20 @@
+@use 'partials/reset';
+
+@use 'partials/_fonts';
+@use 'partials/_header';
+@use 'partials/_buttons';
+@use 'partials/_variables';
+@use 'partials/_text';
+@use 'partials/_general';
+
+@use 'components/nav.scss';
+@use 'components/cardCoursec.scss';
+@use 'components/info.scss';
+@use 'components/dark-theme.scss';
+@use 'components/light-theme.scss';
+@use 'components/modal.scss';
+@use 'components/CoursesPage.scss';
+@use 'components/homePage.scss';
+@use 'components/html-course.scss';
+@use 'components/PhysicsStyles.scss';
+@use 'components/chemistry.scss';

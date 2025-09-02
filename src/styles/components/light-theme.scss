@@ -1,0 +1,90 @@
+@use '@/styles/partials/_variables.scss' as vars;
+
+.light {
+    background: vars.$light-theme-white;
+    color: vars.$light-theme-black;
+
+    .main {
+        &__title {
+            color: vars.$light-theme-black;
+        }
+    }
+    
+    .home {
+        &__section {
+            color: vars.$light-theme-black;
+        }
+        &__title {
+            color: vars.$light-theme-black;
+        }
+        &__description {
+            color: vars.$light-theme-10;
+        }
+        &__button {
+            background-color: vars.$light-theme-10;
+            color: vars.$dark-theme-white;
+            
+            &:hover {
+                background-color: vars.$light-theme-20;
+            }
+        }
+    }
+
+
+    .navbar__nav{
+        background-color: vars.$light-theme-white;
+    }
+    .navbar__nav__link {
+        color: vars.$light-theme-10;
+    }
+    .active_li {
+        color: vars.$dark-theme-black;
+    }
+    .card {
+        background-color: vars.$light-theme-60;
+        &__miniature {
+            background-color: vars.$dark-theme-50-radius;
+        }
+        &__title {
+            color: vars.$dark-theme-60;
+        }
+        &__number {
+            color: vars.$dark-theme-30;
+        }
+    }
+    .modal {
+        &__content {
+            background-color: vars.$dark-theme-50-radius;
+        }
+        &__close {
+            background-color: vars.$light-theme-50;
+            span {
+                background-color: vars.$light-theme-10;
+            }
+            &:hover {
+                background-color: vars.$light-theme-40;
+            }
+        }
+        &__row {
+            &-border {
+                border-top: 1px solid vars.$dark-theme-50-light;
+                border-bottom: 1px solid vars.$dark-theme-50-light;
+            }
+        }
+    }
+
+    .html {
+        &__description {
+            color: vars.$light-theme-20;
+        }
+        &__card {
+            background-color: vars.$light-theme-60;
+            border: 1px solid vars.$dark-theme-40;
+            &:hover {
+                background-color: vars.$dark-theme-40;
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+}
